@@ -1,0 +1,21 @@
+NOIR BURGER — COMO COLOCAR SEU VÍDEO
+
+1. Extraia este ZIP no seu Android.
+2. Abra a pasta noir-burger e depois a pasta assets.
+3. Copie para dentro de assets o vídeo que você baixou do Google Flow.
+4. Renomeie o vídeo exatamente para: burger-hero.mp4
+5. A estrutura deve ficar assim:
+   noir-burger/
+     index.html
+     style.css
+     script.js
+     assets/
+       burger-hero.mp4
+
+IMPORTANTE:
+- O site já está preparado para reproduzir o vídeo automaticamente, sem som e em loop.
+- Se o vídeo não carregar, a imagem de capa continuará aparecendo.
+- O vídeo não está incluído neste ZIP porque ele foi baixado no seu celular e ainda não foi enviado nesta conversa.
+- Antes de publicar, abra script.js e substitua 55DDNUMEROAQUI pelo número do WhatsApp da loja, com código do país e DDD, somente números. Exemplo fictício: 5585999999999.
+- As fotos do cardápio usam imagens online e precisam de internet para aparecer.
+- Este é um site demonstrativo. Ajuste produtos, preços, endereço e condições reais antes de usar comercialmente.

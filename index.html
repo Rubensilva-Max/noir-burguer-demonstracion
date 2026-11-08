@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0a09">
+  <meta name="description" content="NOIR BURGER — hambúrguer artesanal, ingredientes selecionados e sabor inesquecível.">
+  <title>NOIR BURGER — O sabor que domina a noite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">FEITO NA HORA · INGREDIENTES SELECIONADOS · SABOR SEM PRESSA</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Noir Burger início">
+      <span class="brand-mark">N.</span><span>NOIR<span class="brand-light">BURGER</span></span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="#historia">A experiência</a><a href="#cardapio">Cardápio</a><a href="#contato">Contato</a>
+    </nav>
+    <button class="cart-trigger" id="open-cart" aria-label="Abrir carrinho">SACOLA <span id="cart-count">0</span></button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1800&q=85">
+        <source src="assets/burger-hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-fallback"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span></span> ARTESANAL BURGER HOUSE</p>
+        <h1>O sabor que<br><em>domina a noite.</em></h1>
+        <p class="hero-copy">Carne suculenta, queijo derretido e combinações que ficam na memória.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#cardapio">EXPLORAR CARDÁPIO <span>↗</span></a>
+          <a class="text-link" href="#historia">DESCUBRA A NOIR <span>↓</span></a>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>01 — 04</span><span class="scroll-line"></span><span>ROLE PARA EXPLORAR</span></div>
+      <div class="hero-stamp"><span>CRAFTED<br>WITH<br>PASSION</span><b>✳</b></div>
+    </section>
+
+    <section class="intro section-pad" id="historia">
+      <div class="intro-kicker reveal">UMA EXPERIÊNCIA FORA DO COMUM <span>✳</span></div>
+      <div class="intro-grid">
+        <h2 class="reveal">Não é só<br>um hambúrguer.<br><em>É um ritual.</em></h2>
+        <div class="intro-text reveal">
+          <p>Da chapa quente ao primeiro mordida, cada detalhe importa. Selecionamos ingredientes, respeitamos o tempo e criamos combinações com personalidade.</p>
+          <span class="signature">NOIR BURGER — DESDE 2026</span>
+        </div>
+      </div>
+      <div class="intro-image reveal">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1800&q=85" alt="Hambúrguer artesanal com queijo derretido" loading="lazy">
+        <span class="image-caption">SIMPLES NA APARÊNCIA. EXTRAORDINÁRIO NO SABOR.</span>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="cardapio">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow"><span></span> ESCOLHAS DA CASA</p><h2>O cardápio <em>Noir.</em></h2></div>
+        <p>Feitos para impressionar.<br>Preparados para repetir.</p>
+      </div>
+      <div class="category-row" id="categories">
+        <button class="category active" data-category="todos">Todos</button>
+        <button class="category" data-category="burgers">Burgers</button>
+        <button class="category" data-category="acompanhamentos">Acompanhamentos</button>
+        <button class="category" data-category="bebidas">Bebidas</button>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card reveal" data-category="burgers">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85" alt="Noir Classic" loading="lazy"><span class="product-tag">MAIS PEDIDO</span></div>
+          <div class="product-info"><div><h3>Noir Classic</h3><p>Pão brioche, smash 160g, cheddar inglês e molho da casa.</p></div><div class="product-buy"><strong>R$ 32,90</strong><button class="add-button" data-id="classic">＋</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="burgers">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=900&q=85" alt="Black Truffle" loading="lazy"></div>
+          <div class="product-info"><div><h3>Black Truffle</h3><p>Dois blends, queijo suíço, cebola caramelizada e maionese trufada.</p></div><div class="product-buy"><strong>R$ 39,90</strong><button class="add-button" data-id="truffle">＋</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="burgers">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=900&q=85" alt="Double Smoke" loading="lazy"></div>
+          <div class="product-info"><div><h3>Double Smoke</h3><p>Dois smash burgers, cheddar, bacon crocante e barbecue defumado.</p></div><div class="product-buy"><strong>R$ 36,90</strong><button class="add-button" data-id="smoke">＋</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="acompanhamentos">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=85" alt="Batata Noir" loading="lazy"></div>
+          <div class="product-info"><div><h3>Batata Noir</h3><p>Batatas douradas, páprica defumada e maionese especial.</p></div><div class="product-buy"><strong>R$ 18,90</strong><button class="add-button" data-id="fries">＋</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="acompanhamentos">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1639024471283-03518883512d?auto=format&fit=crop&w=900&q=85" alt="Onion rings" loading="lazy"></div>
+          <div class="product-info"><div><h3>Onion Rings</h3><p>Anéis de cebola empanados, crocantes por fora e macios por dentro.</p></div><div class="product-buy"><strong>R$ 16,90</strong><button class="add-button" data-id="onion">＋</button></div></div>
+        </article>
+        <article class="product-card reveal" data-category="bebidas">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=85" alt="Refrigerante gelado" loading="lazy"></div>
+          <div class="product-info"><div><h3>Refri Lata</h3><p>Escolha entre os sabores disponíveis na casa.</p></div><div class="product-buy"><strong>R$ 7,00</strong><button class="add-button" data-id="soda">＋</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <div class="manifesto-bg"></div>
+      <div class="manifesto-content reveal"><span class="eyebrow">THE NOIR WAY</span><h2>O extraordinário<br>está nos <em>detalhes.</em></h2><p>Uma boa noite merece um grande burger.</p><a class="button button-outline" href="#cardapio">ESCOLHA O SEU <span>↗</span></a></div>
+    </section>
+
+    <section class="order-strip section-pad" id="contato">
+      <div class="order-copy reveal"><p class="eyebrow"><span></span> SUA PRÓXIMA EXPERIÊNCIA</p><h2>A noite pede<br><em>Noir Burger.</em></h2></div>
+      <div class="order-side reveal"><p>Escolha seus favoritos, monte seu pedido e envie direto para a nossa equipe pelo WhatsApp.</p><button class="button button-gold" id="order-now">MONTAR MEU PEDIDO <span>↗</span></button><small>Retirada ou delivery · Consulte disponibilidade</small></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#inicio"><span class="brand-mark">N.</span><span>NOIR<span class="brand-light">BURGER</span></span></a><span>© 2026 NOIR BURGER. DEMONSTRAÇÃO.</span><a href="#inicio">VOLTAR AO TOPO ↑</a></footer>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Sacola de compras">
+    <div class="cart-head"><div><span class="eyebrow">SEU PEDIDO</span><h2>Sacola <em>Noir.</em></h2></div><button id="close-cart" class="close-cart" aria-label="Fechar carrinho">×</button></div>
+    <div class="cart-items" id="cart-items"><div class="empty-cart">Sua sacola está vazia.<br><span>Escolha algo especial no cardápio.</span></div></div>
+    <div class="cart-bottom">
+      <div class="cart-total"><span>Subtotal</span><strong id="cart-total">R$ 0,00</strong></div>
+      <label class="field-label" for="order-type">COMO DESEJA RECEBER?</label>
+      <select id="order-type"><option value="Retirada">Retirada</option><option value="Delivery">Delivery</option></select>
+      <label class="field-label" for="customer-name">SEU NOME</label>
+      <input id="customer-name" type="text" placeholder="Digite seu nome">
+      <label class="field-label" for="customer-address">ENDEREÇO (PARA DELIVERY)</label>
+      <input id="customer-address" type="text" placeholder="Rua, número e bairro">
+      <button class="button button-gold checkout-button" id="checkout">ENVIAR PEDIDO PELO WHATSAPP ↗</button>
+      <small class="checkout-note">Demonstração: configure seu número no arquivo script.js antes de publicar.</small>
+    </div>
+  </aside>
+  <div class="toast" id="toast">Adicionado à sacola</div>
+  <script src="script.js"></script>
+</body>
+</html>
